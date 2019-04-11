@@ -33,9 +33,6 @@ class App extends Component {
     console.log(this.state.day, this.state.hour, this.state.minute, this.state.second);
     return (
       <div className="App">
-        <video autoplay muted loop id="myVideo">
-          {/* <source src="http://frolovoleg.ru/videos/abstract_bg.mp4" type="video/mp4"/> */}
-        </video>
         <div className="timer">
           <div className="days">
             <div id="days">{this.state.day}</div>
