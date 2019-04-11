@@ -23,7 +23,7 @@ const isLocalhost = Boolean(
 
 export function register(config) {
   navigator.serviceWorker
-    .register(`${process.env.PUBLIC_URL}/firebase-messageing-sw.js`)
+    .register(`${process.env.PUBLIC_URL}/firebase-messaging-sw.js`)
     .then((registration) => {
       firebase.initializeApp({
         messagingSenderId: '1088426032173'
