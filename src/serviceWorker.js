@@ -25,8 +25,6 @@ export function register(config) {
   navigator.serviceWorker
     .register(`${process.env.PUBLIC_URL}/firebase-messaging-sw.js`)
     .then((registration) => {
-      importScripts('https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js');
-      importScripts('https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js')
       firebase.initializeApp({
         messagingSenderId: '1088426032173'
       })
