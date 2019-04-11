@@ -1,4 +1,4 @@
-import firebase from 'firebase/app';
+import firebase from 'firebase';
 import '@firebase/messaging';
 import config from './config'
 
@@ -14,10 +14,13 @@ function initializePush() {
          return messaging.getToken();
        })
       .then(token => {
-         console.log("FCM Token:", token);
-         //you probably want to send your new found FCM token to the
-         //application server so that they can send any push
-         //notification to you.
+         const currentToken = localStorage.getItem('token')
+         if (!currentToken) {
+            firebase.database().ref('tokens').push({
+               token
+            })
+            localStorage.setItem('token', token)
+         }
        })
       .catch(error => {
          if (error.code === "messaging/permission-blocked") {
