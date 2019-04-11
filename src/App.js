@@ -32,7 +32,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.day, this.state.hour, this.state.minute, this.state.second);
     return (
       <div className="App">
         <div className="timer">
