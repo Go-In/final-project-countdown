@@ -5,7 +5,8 @@ const makeNotifyRequest = (token) => {
     "notification": {
       "title": "Robot",
       "body": "ทำโปรเจค",
-      "click_action": "https://final-project-cd.netlify.com"
+      "click_action": "https://final-project-cd.netlify.com",
+      "icon": "https://final-project-cd.netlify.com/icon.png"
     },
     "to": token,
   })
