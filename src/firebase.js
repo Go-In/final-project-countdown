@@ -1,5 +1,4 @@
-import firebase from 'firebase/app';
-import f from 'firebase';
+import firebase from 'firebase';
 import '@firebase/messaging';
 import config from './config'
 
@@ -15,10 +14,9 @@ function initializePush() {
          return messaging.getToken();
        })
       .then(token => {
-         console.log("FCM Token:", token);
          const currentToken = localStorage.getItem('token')
          if (!currentToken) {
-            f.database().ref('tokens').push({
+            firebase.database().ref('tokens').push({
                token
             })
             localStorage.setItem('token', token)
