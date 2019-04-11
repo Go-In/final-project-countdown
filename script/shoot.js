@@ -17,7 +17,7 @@ const makeNotifyRequest = (token) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'key=AAAA_Ws_PC0:APA91bEp7A-fsA_hIdWCg32Gg_5HWBlkBsZi81ONiZiHSxLYr8tYnc30TWZb7h-ZCgz7nkFYiQVoMYVMFD0763piG06AqPF2NsGqH0qv7yTYMiFTMiqMkxt0dpOHc_4jKowngHWBSqlW'
+      'Authorization': ''
     },
   }
   const req = https.request(options, (res) => {
