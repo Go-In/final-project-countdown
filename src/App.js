@@ -65,6 +65,12 @@ class App extends Component {
             <div className="label">Seconds</div>
           </div>
         </div>
+        {/* <div className="timer-label">
+          <div className="label">Days</div>
+          <div className="label">Hours</div>
+          <div className="label">Minutes</div>
+          <div className="label">Seconds</div>
+        </div> */}
       </div>
     );
   }
