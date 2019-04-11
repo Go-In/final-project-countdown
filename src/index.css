@@ -12,7 +12,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-      
+
 .dot {
   width: 16px;
   height: 16px;
@@ -30,7 +30,14 @@ body {
 }
   
 .label {
+  font-family: "Open Sans", sans-serif;
   font-size: 3vh;
+  font-weight: 300;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 5vh;
   font-weight: 300;
 }
 
@@ -54,6 +61,11 @@ body {
     border-radius: 8px;
     background: #000;
     margin: 1.5vw;
+  }
+  .title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3vh;
+    font-weight: 300;
   }
 }
 

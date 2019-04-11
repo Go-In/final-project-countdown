@@ -35,6 +35,7 @@ class App extends Component {
     console.log(this.state.day, this.state.hour, this.state.minute, this.state.second);
     return (
       <div className="App">
+        <div className="title">เหลือเวลาอีกกกก...</div>
         <div className="timer">
           <div className="days">
             <div id="days">{this.state.day}</div>
