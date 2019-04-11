@@ -34,6 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="title">เหลือเวลาอีกกกก...</div>
         <div className="timer">
           <div className="days">
             <div id="days">{this.state.day}</div>
