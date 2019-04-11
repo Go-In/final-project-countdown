@@ -1,8 +1,10 @@
 {
   "name": "final-project-countdown",
   "version": "0.1.0",
+  "homepage": "https://final-project-cd.netlify.com",
   "private": true,
   "dependencies": {
+    "firebase": "^5.9.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"

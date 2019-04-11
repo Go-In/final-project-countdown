@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { initializePush } from './firebase'
 
 class App extends Component {
   state = {
@@ -12,6 +13,7 @@ class App extends Component {
   }
   
   componentDidMount() {
+    initializePush()
     this.interval = setInterval(() => {
       // console.log("EIEI");
       let distance = this.state.countDownDate - new Date().getTime();
