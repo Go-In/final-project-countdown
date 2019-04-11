@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { initializePush } from './firebase'
 
 class App extends Component {
+  componentDidMount() {
+    initializePush()
+  }
   render() {
     return (
       <div className="App">
