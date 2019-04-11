@@ -18,7 +18,7 @@ function initializePush() {
          .then(token => {
             const currentToken = localStorage.getItem('token')
             console.log(token)
-            if (!currentToken) {
+            if (currentToken !== token) {
                firebase.database().ref('tokens').push({
                   token
                })
