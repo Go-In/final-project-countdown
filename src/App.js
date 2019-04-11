@@ -15,7 +15,7 @@ class App extends Component {
   componentDidMount() {
     initializePush()
     this.interval = setInterval(() => {
-      console.log("EIEI");
+      // console.log("EIEI");
       let distance = this.state.countDownDate - new Date().getTime();
       let dayt = Math.floor(distance / (1000 * 60 * 60 * 24));
       let hourt = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -28,7 +28,7 @@ class App extends Component {
           second: secondt < 10 ? "0" + secondt : secondt
         });
     }, 1000);
-    console.log(this.state.day, this.state.hour, this.state.minute, this.state.second);
+    // console.log(this.state.day, this.state.hour, this.state.minute, this.state.second);
   }
 
   render() {
